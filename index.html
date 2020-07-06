@@ -788,7 +788,7 @@ svg
 
 
 
-d3.csv("/data/cdc_asthma_joined.csv", function(error, data) {
+d3.csv("data/cdc_asthma_joined.csv", function(error, data) {
 var margin = {top: 10, right: 50, bottom: 90, left: 40},
     width = 860 - margin.left - margin.right,
     height = 450 - margin.top - margin.bottom;
@@ -878,7 +878,7 @@ function update() {
       .attr("stroke-opacity", 0)
   lines
     .attr("stroke-opacity", 1)
-  d3.csv('/data/race_asthma.csv', function(error, data) {
+  d3.csv('data/race_asthma.csv', function(error, data) {
     x_axis
       .domain(d3.extent(data, function(d) { return d.year; }))
 
@@ -1010,7 +1010,7 @@ function update() {
   var svg = d3.select('#my_dataviz').select("svg").select("g")
   var label = d3.select('#year-label')
   var dash = d3.select('.dash')
-  d3.csv('/data/demog_asthma.csv', function(error, data) {
+  d3.csv('data/demog_asthma.csv', function(error, data) {
     // x_axis
     //   .domain(d3.extent(data, function(d) { return d.group; }))
     lines
@@ -1069,7 +1069,7 @@ function update() {
 
     function update3() {
       var svg = d3.select('#my_dataviz').select("svg").select("g")
-  d3.csv('/data/demog_asthma.csv', function(error, data) {
+  d3.csv('data/demog_asthma.csv', function(error, data) {
 
         // Animation
         svg.selectAll("rect")
