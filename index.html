@@ -1271,20 +1271,20 @@ d3.select("#temp2").on("click", function(d) {
     var steps = d3.selectAll('.step');
     //#endregion
 
-    function handleResize() {
+    // function handleResize() {
       
-      console.log("handling resize")
+    //   console.log("handling resize")
 
-      // 1. update height of step elements
-      // steps.style('height', stepH + 'px');
+    //   // 1. update height of step elements
+    //   // steps.style('height', stepH + 'px');
 
-      // 2. update height, margin, and layering of the figure
-      figure
-        .style('height', figureHeight + 'px')
-        .style('top', figureMarginTop + 'px')
-      myScrollama.resize();
+    //   // 2. update height, margin, and layering of the figure
+    //   figure
+    //     .style('height', figureHeight + 'px')
+    //     .style('top', figureMarginTop + 'px')
+    //   myScrollama.resize();
 
-    }
+    // }
 
     function handleStepChange(response) {
       switch(response.index) {
@@ -1407,7 +1407,7 @@ d3.select("#temp2").on("click", function(d) {
     function init() {
 
       // 1. force a resize on load to ensure proper dimensions are sent to scrollama
-      handleResize();
+      // handleResize();
 
       // 2. Setup the scrollama
       myScrollama
