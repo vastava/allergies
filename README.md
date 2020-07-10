@@ -1,5 +1,5 @@
 # allergies
-##Data Sources and Considerations
+## Data Sources and Considerations
 
 1. Daily Temperature data (via NOAA API): 
 	* Daily minTemp data was collected for each city from 1950-2020
